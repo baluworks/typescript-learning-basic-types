@@ -19,7 +19,7 @@ Object.keys(Kid).map( val=>{
 
 let firstKid:String =Kid[0];
 let lastKid:String =Kid[(Object.keys(Kid).length/2 - 1)];
-data+=`<br>${firstKid}-${lastKid}`;
+data+=`<br>${firstKid} -${Kid[firstKid]}-${lastKid}-${Kid[lastKid]}`;
 
 // An Array with fixed number of elements whose types are  uknown.
 let tuple:[string,number,boolean];
@@ -28,6 +28,7 @@ data+=`<br>Tuple Example : ${tuple[0]}-${tuple[1]}-${tuple[2]}`;
 
 console.log(tuple)
 
+//Any type is used when we dont know the type of the variable when writing code.(like response from API)
 let anyObject:any= {}
 console.log(anyObject);
 // Write TypeScript code!
