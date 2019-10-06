@@ -21,6 +21,7 @@ let firstKid:String =Kid[0];
 let lastKid:String =Kid[(Object.keys(Kid).length/2 - 1)];
 data+=`<br>${firstKid}-${lastKid}`;
 
+// An Array with fixed number of elements whose types are  uknown.
 let tuple:[string,number,boolean];
 tuple =['Hello', 0,true];
 data+=`<br>Tuple Example : ${tuple[0]}-${tuple[1]}-${tuple[2]}`;
