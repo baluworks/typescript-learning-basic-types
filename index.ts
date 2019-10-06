@@ -18,7 +18,7 @@ Object.keys(Kid).map( val=>{
 });
 
 let firstKid:String =Kid[0];
-let lastKid:String =Kid[(Object.keys(Kid).length/2 -1)];
+let lastKid:String =Kid[(Object.keys(Kid).length/2 - 1)];
 data+=`<br>${firstKid}-${lastKid}`;
 
 let tuple:[string,number,boolean];
