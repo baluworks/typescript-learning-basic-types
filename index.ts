@@ -1,8 +1,6 @@
+import  Employee from "./Employee";
 // Import stylesheets
 import "./style.css";
-
-
-import Employee from './Employee';
 
 //Enumerations :
 enum Color {
@@ -56,6 +54,10 @@ console.log(nullVoidString);
 
 //Type Assertion : allow you to set the type of avalue and  tell compiler not to infer it.
 //simpley typcaste in other languages.
+ let empData =<Employee> {
+ 
+ };
+ console.log(empData.firstName);
 
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById("app");
