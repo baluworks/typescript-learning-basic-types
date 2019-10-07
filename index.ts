@@ -17,9 +17,11 @@ Object.keys(Kid).map( val=>{
   console.log(val);
 });
 
-let firstKid:String =Kid[0];
-let lastKid:String =Kid[(Object.keys(Kid).length/2 - 1)];
-data+=`<br>${firstKid} -${Kid[firstKid]}-${lastKid}-${Kid[lastKid]}`;
+let firstKidName:String =Kid[0];
+let lastKidName:String =Kid[(Object.keys(Kid).length/2 - 1)];
+
+
+data+=`<br>${firstKidName} -${0}-${lastKidName}-${(Object.keys(Kid).length/2 - 1)}`;
 
 // An Array with fixed number of elements whose types are  uknown.
 let tuple:[string,number,boolean];
@@ -28,9 +30,15 @@ data+=`<br>Tuple Example : ${tuple[0]}-${tuple[1]}-${tuple[2]}`;
 
 console.log(tuple)
 
-//Any type is used when we dont know the type of the variable when writing code.(like response from API)
+//Any type is used when we dont know the type of the variable when writing code.(like response from)
 let anyObject:any= {}
 console.log(anyObject);
+
+// void is a little like the opposite of any: the absence of having any type at all. You may commonly see this as the return type of functions that do not return a value
+
+let nullVoidString: null | number | undefined;
+nullVoidString = 12233;
+console.log(nullVoidString);
 // Write TypeScript code!
 const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>TypeScript Starter ${data}</h1>`;
